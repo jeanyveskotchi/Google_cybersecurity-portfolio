@@ -63,7 +63,7 @@ Google_cybersecurity-portfolio/
 
 ├─ 08-python-allowlist/ → Python automation for network rule management
 
-└─ LICENSE / README.md / .gitignore
+└─ README.md 
 
 
 ---
