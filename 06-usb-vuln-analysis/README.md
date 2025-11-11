@@ -5,6 +5,8 @@ You are part of the security team at Rhetorical Hospital and arrive to work one 
 You bring the USB drive back to your office where the team has virtualization software installed on a workstation. Virtualization software can be used for this very purpose because it’s one of the only ways to safely investigate an unfamiliar USB stick. The  software works by running a simulated instance of the computer on the same workstation. This simulation isn’t connected to other files or networks, so the USB drive can’t affect other systems if it happens to be infected with malicious software.
 
 **USB content**:
+
+
 ![pic](sc/3.png)
 
 ---
