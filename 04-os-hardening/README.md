@@ -15,6 +15,7 @@ You are a cybersecurity analyst for yummyrecipesforme.com, a website that sells 
 ## Section 1: Identify the network protocol involved in the incident
 
 DNS   -> to get the IP address of the domain
+
 HTTP -> for encrypted web traffic
 
 
@@ -25,6 +26,7 @@ HTTP -> for encrypted web traffic
 
 A former employee executed a brute force attack to gain access to the web host. He embedded a javascript function in the source code that prompted visitors to download and run a file upon visiting the website. After embedding the malware, the hacker changed the password to the administrative account. We can confirm this with the tcpdump showing a DNS resolution of both domain:
 yummyrecipesforme.com. -> 203.0.113.22 
+
 greatrecipesforme.com. -> 192.0.2.17 
 
 It forced customers to download malware and some experienced a slow down of their system.
