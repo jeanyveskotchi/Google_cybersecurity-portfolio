@@ -8,18 +8,17 @@ You take the server offline temporarily so that the machine can recover and retu
 ---
 **Sample of the Wireshark TCP/HTTP log:**
 
-![1](sc/1)
+![1](sc/1.png)
 
 **Sample of the colored log with the IP address of the attacker colored in red:**
 
-![1](sc/2)
+![1](sc/2.png)
 
 ---
 
 ## Cybersecurity Incident Report
 
-## Section 1: Identify the type of attack that may have caused this 
-network interruption
+## Section 1: Identify the type of attack that may have caused this network interruption
 One potential explanation for the website's connection timeout error message is SYN flood attack, which targets network bandwidth to slow traffic.
 The logs show that the attacker with IP address (203.0.113.0) is flooding the server with SYN packet requests.
 This event could be: a direct denial of service attack (DOS) called SYN flood attack
