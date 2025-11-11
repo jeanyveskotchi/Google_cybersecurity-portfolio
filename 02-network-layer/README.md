@@ -6,16 +6,18 @@ You are tasked with analyzing the situation and determining which network protoc
 
 ![tcpdump](sc/tcpdump)
 
+# Cybersecurity Incident Report: Network Traffic Analysis
+## Part 1: Provide a summary of the problem found in the DNS and ICMP 
+traffic log.
 
-**Observation (tcpdump):** ICMP errors reporting **UDP port 53 unreachable** while querying DNS.
+The UDP protocol reveals that the port 53 is unreachable when trying to access the website www.yummyrecipesforme.com.
+This is based on the results of the network analysis, which show that the ICMP echo reply returned the error message:  “udp port 53 unreachable.”.
+The port noted in the error message is used for domain name system (DNS) which translates domain name like yummyrecipesforme.com into IP address.
+The most likely issue is: a firewall is blocking the traffic
 
-**Assessment:**
-- DNS over UDP/53 being blocked or service unavailable → name resolution fails → HTTPS never starts.
-- Likely causes: **Firewall rule blocking UDP/53**, DNS service outage, or network ACL misconfig.
+## Part 2: Explain your analysis of the data and provide at least one cause of the incident.
 
-**Actions:**
-- Verify DNS reachability to resolver(s) (UDP+TCP 53).
-- Check firewall/ACL changes and DNS server health.
-- Add fallback resolvers and monitoring/alerting on NXDOMAIN/SERVFAIL spikes.
+The time incident occurred past noon when several customers of clients reported that they were not able to access the client company website www.yummyrecipesforme.com, and saw the error “destination port unreachable” after waiting for the page to load. I loaded my network analyzer tool, tcpdump, and attempted to load the webpage again. The analyzer shows that when I send UDP packets to the DNS server, I receive ICMP packets containing the error message: “udp port 53 unreachable.” A  likely cause of the incident could be a firewall blocking the traffic or a DOS attack overwhelming the server of request making it unreachable.
 
-**Takeaway:** Fix name resolution first; higher-layer failures cascade from DNS. 
+
+
