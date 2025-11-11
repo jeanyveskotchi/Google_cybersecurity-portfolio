@@ -46,14 +46,23 @@ Throughout this program, I built a hands-on understanding of the **core domains 
 Each folder contains documentation and analysis from a different phase of the certification program:
 
 Google_cybersecurity-portfolio/
+
 ├─ 01-botium-audit/ → Internal controls & compliance report (PCI, GDPR, SOC)
+
 ├─ 02-network-layer/ → DNS & ICMP troubleshooting analysis
+
 ├─ 03-network-attacks/ → SYN flood attack detection & remediation
+
 ├─ 04-os-hardening/ → Web server malware injection investigation
+
 ├─ 05-nist-csf-response/ → DDoS incident response mapped to NIST CSF
+
 ├─ 06-usb-vuln-analysis/ → USB drive vulnerability & data exposure report
+
 ├─ 07-incident-journal/ → Incident handler’s ransomware case log
+
 ├─ 08-python-allowlist/ → Python automation for network rule management
+
 └─ LICENSE / README.md / .gitignore
 
 
